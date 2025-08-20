@@ -10,9 +10,12 @@ repositories {
 }
 
 dependencies {
+    implementation("ch.qos.logback:logback-classic:1.5.18")
+
     testImplementation(platform("org.junit:junit-bom:5.10.0"))
     testImplementation("org.junit.jupiter:junit-jupiter")
     testImplementation("org.assertj:assertj-core:3.11.1")
+
 }
 
 tasks.test {
